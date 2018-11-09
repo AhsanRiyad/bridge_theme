@@ -1,0 +1,4659 @@
+/*
+BOOTSTRAP & HTML5 BOILER PLATE JS JQ INTEGRATION ALTOGETHER
+Author: Riyad Ahsan
+Email: riyad298@gmail.com
+URL: http://riyadahsan.com/
+
+ media query for responsiveness
+Media Query 
+===============================
+/* for mobile responsiveness 
+@media (max-width: 767px) { }
+ for tab responsiveness 
+@media (max-width: 1200px) and (min-width: 767px) { }
+ for desktop responsiveness 
+@media (min-width: 1200px){ }
+*/
+
+
+
+
+
+
+/*Animation part starts here*/
+
+
+
+
+@-webkit-keyframes rotateInDownLeft {
+    0% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: rotate3d(0, 0, 1, -45deg);
+        transform: rotate3d(300, 0, 1, -45deg);
+        opacity: 0;
+
+
+
+
+
+
+    }
+
+    100% {
+        -webkit-transform-origin: left bottom;
+        transform-origin: left bottom;
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+
+
+
+    }
+}
+
+.rotateInDownLeft {
+    -webkit-animation-name: rotateInDownLeft;
+    animation-name: rotateInDownLeft;
+    -webkit-animation-duration: 1s;  
+    animation-duration: 1s;       
+}
+
+
+
+
+
+
+
+
+
+
+/*
+#carouselCaption1 , #carouselCaption2 {
+
+    -webkit-animation-duration: 3s;
+    -moz-animation-duration: 3s;
+    -ms-transition-animation-duration: 3s;
+    
+
+}*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*media query for xs starts*/
+
+
+@media (max-width: 767px) {
+
+
+
+    /*    personalize navbar part starts*/
+
+    .personalizeNavbar{
+
+        background: black;
+
+
+    }
+
+
+
+
+
+
+    .navbarHr{
+        width: 30px;
+        position: relative;
+        left: -22px;
+    }
+
+
+    .col:active{
+        color: white;
+    }
+
+    .col:focus{
+        color: white;
+    }
+
+
+
+
+    #col:active{
+        color: white;
+    }
+
+
+    #col:focus{
+        color: white;
+    }
+
+    #col {
+        position: relative;
+        top:-40px;
+    }
+
+    /*    personalize navbar part ends*/
+
+
+
+
+
+
+    .scrollToTop {
+        background: #6C777B;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+
+
+    .scrollToTop:hover {
+        background: #E8E8E8;
+        color:black;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+    .scrollToTop:hover .iconn{
+        color:black;
+    }
+
+
+
+    .iconn {
+        color:#FFFFFF;
+        font-size: 20px;
+    }
+    .iconn:hover  {
+        color:black;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapper {
+        height: 100vh;
+        background:transparent;
+        /*    background:#191D20;*/
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar part ends>*/
+
+
+
+    /*<!--carousel and headerWrapper Part starts-->*/
+
+    .carousel-control 
+    {
+
+
+
+
+
+        height: 25px;
+        width: 25px;
+
+
+
+
+    }
+
+
+
+    .carousel-control.left, .carousel-control.right {
+        background-image: none
+    }
+
+    .carousel-control:hover{
+
+
+    }
+
+    .carousel-control.left {
+        position:absolute;
+        top:88%;
+        left: 85%;
+
+
+    }
+
+    .carousel-control.right{
+        position:absolute;
+        top:88%;
+        right:10%;
+
+    }
+
+    .headAbsoute {
+        position: fixed;
+        top: 150px;
+        left:20px;
+        z-index: 10;
+
+    }
+
+    #carouselImage1 {
+        height: calc(100vh - 112px);
+        width: 100vw;
+    }
+
+    #carouselImage2 {
+        height: calc(100vh - 112px);
+        width: 100vw;
+    }
+
+    
+    
+    
+    
+/*Animation fideUp part starts here*/
+
+
+@keyframes example {
+    0%   { height:60% ; opacity:.2;}
+    25%  { height:85%; opacity:.5;}
+    50%  { height:85%; opacity:.7;}
+    75%  { height:85%; opacity:.9;}
+    100% { height:85%; opacity:.1;}
+}
+
+.animationPrac {
+    
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 3; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    
+}  
+/*Animation fideUp part ends here*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .carousel-caption {
+        height: 85%;
+        text-align: left;
+        width: 85%;
+        margin-left: -7% ;
+
+    }
+
+    .carousel-caption> h6 {
+        font-size: 15px;
+    }
+
+    #carouselCaption1 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+    #carouselCaption2 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-control {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-caption> h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .carousel-caption> p {
+        font-size: 15px;
+    }
+
+    .sideBarHr2 {
+        width: 50px;
+        margin-bottom: 30px;
+        color: white;
+        height: 1.5px;
+        border: none;
+        background-color: white;
+
+
+    }
+
+    .btn-active {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 20px;
+        margin: 20px 0 0 0 ;
+    }
+
+    .btn-active:hover {
+        color: white;
+        background: black;
+    }
+
+
+    /*<!--carousel and headerWrapper Part ends>*/
+
+
+
+
+
+    /*second Wrapper part starts*/
+
+    .secondWrapper {
+        background: #3B434A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .secondWrapperRow2{
+        margin: 60px 7%;
+
+    }
+
+
+
+
+    /*second Wrapper part ends*/
+
+
+    /*<!--third wrapper part starts-->*/
+
+    .thirdWrapper {
+        background: #3B494A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .thirdWrapperRow2{
+        margin: 60px 0;
+
+    }
+
+
+
+
+    .thirdWrapperH1Middle{
+        margin-top: 50px;
+    }
+
+    .thirdWrapperPMiddle{
+        margin-bottom: 50px;
+    }
+
+
+
+
+    .glyphiconArrowRight
+    {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    /*<!--third wrapper part ends>*/
+
+
+
+
+    /*a tag starts*/
+    a{
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    /*a tag ends*/
+
+
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+    .containerOverlay {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+        float: left;
+        overflow: hidden;
+        color: white;
+
+    }
+
+
+    .containerOverlay:hover {
+        background: #191D20;
+
+
+    }
+
+
+    .imageOverlay2 {
+        opacity: 1;
+
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .imageOverlay2:hover {
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .containerOverlay:hover .imageOverlay2 {
+        opacity: 0.3;
+        transform: scale(1.1);
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .containerOverlay:hover .middle {
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+
+
+
+    .text {
+
+        color: white;
+        font-size: 16px;
+
+    }
+
+
+    .btn-active3 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 22px;
+        margin-top:15px;
+
+    }
+
+    .btn-active3:hover {
+        color: white;
+        background: black;
+    }
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+
+
+
+    /*threePicWrapper part starts*/
+
+    .threePicWrapper{
+        background: #3B494A;
+        color: white;
+    }
+
+
+    .threePicWrapperRow2 {
+        margin: 70px 0;
+    }
+
+
+
+    .threePicWrapperH1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .img1 , .img2 , .img3 {
+        transition:  visibility 1s ease;
+    }
+    /*threePicWrapper part ends*/
+
+
+    /*lastWrapper part starts*/
+    .lastWrapper{
+        background: #191D20;
+    }
+    /*lastWrapper part ends*/
+
+
+
+    .btn-active2{
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        letter-spacing: .2em;
+        margin: 100px auto;
+    }
+
+
+
+    .btn-active2:hover{
+        color: white;
+        border: 1px solid #191D20;
+
+    }
+
+
+
+
+    /*ourTeam wrapper part starts*/
+    .ourTeamWrapper
+    {
+        background:#3B494A;
+
+
+    }
+
+
+    .ourTeamWrapperRow2{
+        margin: 70px 0px;
+    }
+
+    .ourTeamWrapperRow3{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .ourTeamWrapperImageRow1{
+        margin-bottom:  30px;
+
+    }
+
+    .ourTeamWrapperH1 {
+        color: white;
+    }
+
+
+    .ourTeamImageH1 {
+        color: white;
+
+    }
+
+    .ourTeamImage1P {
+        color: white;
+        margin-bottom: 50px;
+
+    }
+    /*ourTeam wrapper part ends*/
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar for our team page part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapperOurTeamPage {
+        height: 100vh;
+        /*    background:transparent;*/
+        background:#191D20;
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar for our team page part ends>*/
+
+
+
+
+
+    /*workInProgressWrapper page part starts*/
+    .workInProgressWrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgressWrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    /*workInProgressWrapper page part ends*/
+
+
+
+    /*workInProgress2Wrapper page part starts*/
+    .workInProgress2Wrapper{
+
+        background: #3B434A;
+    }
+
+
+    .workInProgress2WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress2Wrapper page part ends*/
+
+
+
+    /*workInProgress3Wrapper page part starts*/
+    .workInProgress3Wrapper{
+
+        background: #3B494A;
+    }
+
+    .workInProgress3WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress3Wrapper page part ends*/
+
+
+
+    /*workInProgress4Wrapper page part starts*/
+    .workInProgress4Wrapper{
+
+        background: #3B434A;
+    }
+
+    .workInProgress4WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress4Wrapper page part ends*/
+
+
+
+    /*workInProgress5Wrapper page part starts*/
+    .workInProgress5Wrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgress5WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress5Wrapper page part ends*/
+
+
+
+
+
+
+
+
+    /*contactUs page part starts*/
+
+
+    .contactUsWrapper{
+        background: #3B494A;
+    }
+
+    .contactUsWrapperRow21 {
+        margin-top:40px;
+        margin-bottom: 40px;
+        color: white;
+    }
+
+    .contactUsWrapperRow23 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        color: white;
+    }
+
+
+    .contactUsWrapperRow21P{
+        white-space: pre-line;
+        line-height: 2em;
+    }
+
+    .contactUsWrapperRow21H3{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .contactUsWrapperForm input , .contactUsWrapperForm input:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        border-color: white;
+
+    }
+
+
+    .contactUsWrapperForm textarea , .contactUsWrapperForm textarea:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        color: white;
+        border-color: white;
+    }
+
+
+
+
+    .contactUsWrapperButton {
+        border-radius: 2px;
+        padding:8px 20px ;
+        margin-right: -10px;
+        background: #3B494A;
+        color: white;
+
+
+    }
+    .contactUsWrapperButton:hover {
+
+        background: black;
+        color: white;
+        border-color: black;
+
+
+    }
+
+
+    .contactUsWrapperFormH3{
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+    /*place holder color change starts*/
+    ::-webkit-input-placeholder { /* Chrome */
+        color: white !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white !important;
+        opacity: 1;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+        color: white !important;
+        opacity: 1;
+    }
+
+
+    input:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    input:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    input:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    input:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+
+
+    textarea:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    textarea:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    textarea:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+    /*place holder color change starts*/
+
+
+
+    /*google map part starts*/
+
+
+
+
+    .map {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+
+    /*google map part ends*/
+
+
+
+    /*contactUs page part ends*/
+
+
+
+
+
+
+    /*workWrapper page part starts*/
+    .workWrapper {
+        background: #3B494A;
+        color: white;
+
+
+    }
+
+
+    .workWrapperRow2 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    /*workWrapper page part ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*media query for xs ends*/
+
+
+
+
+
+/*media query for sm starts*/
+
+
+@media (max-width: 991px) and (min-width: 768px)
+{
+
+
+
+    /*    personalize navbar part starts*/
+
+    .personalizeNavbar{
+
+        background: black;
+
+
+    }
+
+
+
+
+
+
+    .navbarHr{
+        width: 30px;
+        position: relative;
+        left: -22px;
+    }
+
+
+    .col:active{
+        color: white;
+    }
+
+    .col:focus{
+        color: white;
+    }
+
+
+
+
+    #col:active{
+        color: white;
+    }
+
+
+    #col:focus{
+        color: white;
+    }
+
+    #col {
+        position: relative;
+        top:-40px;
+    }
+
+    /*    personalize navbar part ends*/
+
+
+
+
+
+
+    .scrollToTop {
+        background: #6C777B;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+
+
+    .scrollToTop:hover {
+        background: #E8E8E8;
+        color:black;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+    .scrollToTop:hover .iconn{
+        color:black;
+    }
+
+
+
+    .iconn {
+        color:#FFFFFF;
+        font-size: 20px;
+    }
+    .iconn:hover  {
+        color:black;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapper {
+        height: 100vh;
+        background:transparent;
+        /*    background:#191D20;*/
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar part ends>*/
+
+
+
+    /*<!--carousel and headerWrapper Part starts-->*/
+
+    .carousel-control 
+    {
+
+
+
+
+
+        height: 25px;
+        width: 25px;
+
+
+
+
+    }
+
+
+
+    .carousel-control.left, .carousel-control.right {
+        background-image: none
+    }
+
+    .carousel-control:hover{
+
+
+    }
+
+    .carousel-control.left {
+        position:absolute;
+        top:88%;
+        left: 85%;
+
+
+    }
+
+    .carousel-control.right{
+        position:absolute;
+        top:88%;
+        right:10%;
+
+    }
+
+    .headAbsoute {
+        position: fixed;
+        top: 150px;
+        left:20px;
+        z-index: 10;
+
+    }
+
+    #carouselImage1 {
+        height: calc(100vh - 112px);
+        width: 100vw;
+    }
+
+    #carouselImage2 {
+        height: calc(100vh - 112px);
+        width: 100vw;
+    }
+
+    
+    
+    
+/*Animation fideUp part starts here*/
+
+
+@keyframes example {
+    0%   { height:55% ; opacity:.2;}
+    25%  { height:80%; opacity:.5;}
+    50%  { height:80%; opacity:.7;}
+    75%  { height:80%; opacity:.9;}
+    100% { height:80%; opacity:.1;}
+}
+
+.animationPrac {
+    
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 3; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    
+}  
+/*Animation fideUp part ends here*/
+    
+    
+    
+    
+    
+    
+    .carousel-caption {
+        height: 80%;
+        text-align: left;
+        width: 90%;
+        margin-left: -12%;
+
+    }
+
+    .carousel-caption> h6 {
+        font-size: 20px;
+    }
+
+    #carouselCaption1 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+    #carouselCaption2 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-control {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-caption> h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-caption> p {
+        font-size: 19px;
+    }
+
+    .sideBarHr2 {
+        width: 50px;
+        margin-bottom: 30px;
+        color: white;
+        height: 1.5px;
+        border: none;
+        background-color: white;
+
+
+    }
+
+    .btn-active {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 20px;
+        margin: 20px 0 0 0 ;
+    }
+
+    .btn-active:hover {
+        color: white;
+        background: black;
+    }
+
+
+    /*<!--carousel and headerWrapper Part ends>*/
+
+
+
+
+
+    /*second Wrapper part starts*/
+
+    .secondWrapper {
+        background: #3B434A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .secondWrapperRow2{
+        margin: 60px 7%;
+
+    }
+
+
+
+
+    /*second Wrapper part ends*/
+
+
+    /*<!--third wrapper part starts-->*/
+
+    .thirdWrapper {
+        background: #3B494A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .thirdWrapperRow2{
+        margin: 100px 0;
+
+    }
+
+    .glyphiconArrowRight
+    {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    /*<!--third wrapper part ends>*/
+
+
+
+
+    /*a tag starts*/
+    a{
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    /*a tag ends*/
+
+
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+    .containerOverlay {
+        position: relative;
+        width: 12.5%;
+        max-width: 12.5%;
+        float: left;
+        overflow: hidden;
+        color: white;
+
+    }
+
+
+    .containerOverlay:hover {
+        background: #191D20;
+
+
+    }
+
+
+    .imageOverlay2 {
+        opacity: 1;
+
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .imageOverlay2:hover {
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .containerOverlay:hover .imageOverlay2 {
+        opacity: 0.3;
+        transform: scale(1.1);
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .containerOverlay:hover .middle {
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+
+
+
+    .text {
+
+        color: white;
+        font-size: 16px;
+
+    }
+
+
+    .btn-active3 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 22px;
+        margin-top:15px;
+
+    }
+
+    .btn-active3:hover {
+        color: white;
+        background: black;
+    }
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+
+
+
+    /*threePicWrapper part starts*/
+
+    .threePicWrapper{
+        background: #3B494A;
+        color: white;
+    }
+
+
+    .threePicWrapperRow2 {
+        margin: 70px 0;
+    }
+
+
+
+    .threePicWrapperH1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .img1 , .img2 , .img3 {
+        transition:  visibility 1s ease;
+    }
+    /*threePicWrapper part ends*/
+
+
+    /*lastWrapper part starts*/
+    .lastWrapper{
+        background: #191D20;
+    }
+    /*lastWrapper part ends*/
+
+
+
+    .btn-active2{
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        letter-spacing: .2em;
+        margin: 100px auto;
+    }
+
+
+
+    .btn-active2:hover{
+        color: white;
+        border: 1px solid #191D20;
+
+    }
+
+
+
+
+    /*ourTeam wrapper part starts*/
+    .ourTeamWrapper
+    {
+        background:#3B494A;
+
+
+    }
+
+
+    .ourTeamWrapperRow2{
+        margin: 70px 0px;
+    }
+
+    .ourTeamWrapperRow3{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .ourTeamWrapperImageRow1{
+        margin-bottom:  30px;
+
+    }
+
+    .ourTeamWrapperH1 {
+        color: white;
+    }
+
+
+    .ourTeamImageH1  {
+        color: white;
+
+    }
+    .ourTeamImage1P {
+        color: white;
+        margin-bottom: 50px;
+
+    }
+
+    /*ourTeam wrapper part ends*/
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar for our team page part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapperOurTeamPage {
+        height: 100vh;
+        /*    background:transparent;*/
+        background:#191D20;
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar for our team page part ends>*/
+
+
+
+
+
+    /*workInProgressWrapper page part starts*/
+    .workInProgressWrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgressWrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    /*workInProgressWrapper page part ends*/
+
+
+
+    /*workInProgress2Wrapper page part starts*/
+    .workInProgress2Wrapper{
+
+        background: #3B434A;
+    }
+
+
+    .workInProgress2WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress2Wrapper page part ends*/
+
+
+
+    /*workInProgress3Wrapper page part starts*/
+    .workInProgress3Wrapper{
+
+        background: #3B494A;
+    }
+
+    .workInProgress3WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress3Wrapper page part ends*/
+
+
+
+    /*workInProgress4Wrapper page part starts*/
+    .workInProgress4Wrapper{
+
+        background: #3B434A;
+    }
+
+    .workInProgress4WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress4Wrapper page part ends*/
+
+
+
+    /*workInProgress5Wrapper page part starts*/
+    .workInProgress5Wrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgress5WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress5Wrapper page part ends*/
+
+
+
+
+
+
+
+
+    /*contactUs page part starts*/
+
+
+    .contactUsWrapper{
+        background: #3B494A;
+    }
+
+    .contactUsWrapperRow21 {
+        margin-top:60px;
+        margin-bottom: 60px;
+        color: white;
+    }
+
+    .contactUsWrapperRow23 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        color: white;
+    }
+
+
+    .contactUsWrapperRow21P{
+        white-space: pre-line;
+        line-height: 2em;
+    }
+
+    .contactUsWrapperRow21H3{
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .contactUsWrapperForm input , .contactUsWrapperForm input:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        border-color: white;
+
+    }
+
+
+    .contactUsWrapperForm textarea , .contactUsWrapperForm textarea:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        color: white;
+        border-color: white;
+    }
+
+
+
+
+    .contactUsWrapperButton {
+        border-radius: 2px;
+        padding:8px 20px ;
+        margin-right: -10px;
+        background: #3B494A;
+        color: white;
+
+
+    }
+    .contactUsWrapperButton:hover {
+
+        background: black;
+        color: white;
+        border-color: black;
+
+
+    }
+
+
+    .contactUsWrapperFormH3{
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+    /*place holder color change starts*/
+    ::-webkit-input-placeholder { /* Chrome */
+        color: white !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white !important;
+        opacity: 1;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+        color: white !important;
+        opacity: 1;
+    }
+
+
+    input:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    input:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    input:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    input:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+
+
+    textarea:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    textarea:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    textarea:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+    /*place holder color change starts*/
+
+
+
+    /*google map part starts*/
+
+
+
+
+    .map {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+
+    /*google map part ends*/
+
+
+
+    /*contactUs page part ends*/
+
+
+
+
+
+
+    /*workWrapper page part starts*/
+    .workWrapper {
+        background: #3B494A;
+        color: white;
+
+
+    }
+
+
+    .workWrapperRow2 {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    /*workWrapper page part ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*media query for sm ends*/
+
+
+
+
+/*media query for md starts*/
+
+
+
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+
+
+
+
+
+
+
+
+    .scrollToTop {
+        background: #6C777B;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+
+
+    .scrollToTop:hover {
+        background: #E8E8E8;
+        color:black;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+    .scrollToTop:hover .iconn{
+        color:black;
+    }
+
+
+
+    .iconn {
+        color:#FFFFFF;
+        font-size: 20px;
+    }
+    .iconn:hover  {
+        color:black;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar part starts-->*/
+
+    .headAbsoute {
+        position: fixed;
+        top: 150px;
+        left:15px;
+        z-index: 10;
+
+    }
+
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapper {
+        height: 100vh;
+        background:transparent;
+        /*    background:#191D20;*/
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar part ends>*/
+
+
+
+    /*<!--carousel and headerWrapper Part starts-->*/
+
+    .carousel-control 
+    {
+
+
+
+
+
+        height: 25px;
+        width: 25px;
+
+
+
+
+    }
+
+
+
+    .carousel-control.left, .carousel-control.right {
+        background-image: none
+    }
+
+    .carousel-control:hover{
+
+
+    }
+
+    .carousel-control.left {
+        position:absolute;
+        top:85%;
+        left: 82%;
+
+
+    }
+
+    .carousel-control.right{
+        position:absolute;
+        top:85%;
+        right:10%;
+
+    }
+
+
+
+
+    #carouselImage1 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #carouselImage2 {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    
+    
+    
+    
+/*Animation fideUp part starts here*/
+
+
+@keyframes example {
+    0%   { height:55% ; opacity:.2;}
+    25%  { height:80%; opacity:.5;}
+    50%  { height:80%; opacity:.7;}
+    75%  { height:80%; opacity:.9;}
+    100% { height:80%; opacity:.1;}
+}
+
+.animationPrac {
+    
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 3; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    
+}  
+/*Animation fideUp part ends here*/
+    
+    
+    
+    
+    
+
+    .carousel-caption {
+        height: 80%;
+        text-align: left;
+        width: 55%;
+        margin-left:100px;
+    }
+
+    .carousel-caption> h6 {
+        font-size: 18px;
+    }
+
+    #carouselCaption1 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+    #carouselCaption2 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-control {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-caption> h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-caption> p {
+        font-size: 16px;
+    }
+
+    .sideBarHr2 {
+        width: 50px;
+        margin-bottom: 30px;
+        color: white;
+        height: 1.5px;
+        border: none;
+        background-color: white;
+
+
+    }
+
+    .btn-active {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 20px;
+        margin: 20px 0 0 0 ;
+    }
+
+    .btn-active:hover {
+        color: white;
+        background: black;
+    }
+
+
+    /*<!--carousel and headerWrapper Part ends>*/
+
+
+
+
+
+    /*second Wrapper part starts*/
+
+    .secondWrapper {
+        background: #3B434A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .secondWrapperRow2{
+        margin: 100px 0;
+
+    }
+
+    /*second Wrapper part ends*/
+
+
+    /*<!--third wrapper part starts-->*/
+
+    .thirdWrapper {
+        background: #3B494A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .thirdWrapperRow2{
+        margin: 100px 0;
+
+    }
+
+    .glyphiconArrowRight
+    {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    /*<!--third wrapper part ends>*/
+
+
+
+
+    /*a tag starts*/
+    a{
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    /*a tag ends*/
+
+
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+    .containerOverlay {
+        position: relative;
+        width: 25%;
+        max-width: 25%;
+        float: left;
+        overflow: hidden;
+        color: white;
+
+    }
+
+
+    .containerOverlay:hover {
+        background: #191D20;
+
+
+    }
+
+
+    .imageOverlay2 {
+        opacity: 1;
+
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .imageOverlay2:hover {
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .containerOverlay:hover .imageOverlay2 {
+        opacity: 0.3;
+        transform: scale(1.1);
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .containerOverlay:hover .middle {
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+
+
+
+    .text {
+
+        color: white;
+        font-size: 16px;
+
+    }
+
+
+    .btn-active3 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 22px;
+        margin-top:15px;
+
+    }
+
+    .btn-active3:hover {
+        color: white;
+        background: black;
+    }
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+
+
+
+    /*threePicWrapper part starts*/
+
+    .threePicWrapper{
+        background: #3B494A;
+        color: white;
+    }
+
+
+    .threePicWrapperRow2 {
+        margin: 90px 0;
+    }
+
+
+
+    .threePicWrapperH1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    
+    .img1 , .img2 , .img3  {
+        transition:  all 1s ease;
+        
+        
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /*threePicWrapper part ends*/
+
+
+    /*lastWrapper part starts*/
+    .lastWrapper{
+        background: #191D20;
+    }
+    /*lastWrapper part ends*/
+
+
+
+    .btn-active2{
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        letter-spacing: .2em;
+        margin: 100px auto;
+    }
+
+
+
+    .btn-active2:hover{
+        color: white;
+        border: 1px solid #191D20;
+
+    }
+
+
+
+
+    /*ourTeam wrapper part starts*/
+    .ourTeamWrapper
+    {
+        background:#3B494A;
+
+
+    }
+
+
+    .ourTeamWrapperRow2{
+        margin: 100px 0px;
+    }
+
+    .ourTeamWrapperRow3{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .ourTeamWrapperImageRow1{
+        margin: 30px 0px;
+    }
+
+    .ourTeamWrapperH1 {
+        color: white;
+    }
+
+
+    .ourTeamImageH1 , .ourTeamImage1P {
+        color: white;
+
+    }
+
+
+    /*ourTeam wrapper part ends*/
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar for our team page part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapperOurTeamPage {
+        height: 100vh;
+        /*    background:transparent;*/
+        background:#191D20;
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar for our team page part ends>*/
+
+
+
+
+
+    /*workInProgressWrapper page part starts*/
+    .workInProgressWrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgressWrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    /*workInProgressWrapper page part ends*/
+
+
+
+    /*workInProgress2Wrapper page part starts*/
+    .workInProgress2Wrapper{
+
+        background: #3B434A;
+    }
+
+
+    .workInProgress2WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress2Wrapper page part ends*/
+
+
+
+    /*workInProgress3Wrapper page part starts*/
+    .workInProgress3Wrapper{
+
+        background: #3B494A;
+    }
+
+    .workInProgress3WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress3Wrapper page part ends*/
+
+
+
+    /*workInProgress4Wrapper page part starts*/
+    .workInProgress4Wrapper{
+
+        background: #3B434A;
+    }
+
+    .workInProgress4WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress4Wrapper page part ends*/
+
+
+
+    /*workInProgress5Wrapper page part starts*/
+    .workInProgress5Wrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgress5WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress5Wrapper page part ends*/
+
+
+
+
+
+
+    /*google map part starts*/
+
+    .map {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+
+    /*google map part ends*/
+
+
+
+    /*contactUs page part starts*/
+    .contactUsWrapper{
+        background: #3B494A;
+    }
+
+    .contactUsWrapperRow21 {
+        margin-top:100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .contactUsWrapperRow23 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+    .contactUsWrapperRow21P{
+        white-space: pre-line;
+        line-height: 2em;
+    }
+
+    .contactUsWrapperRow21H3{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .contactUsWrapperForm input , .contactUsWrapperForm input:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        border-color: white;
+
+    }
+
+
+    .contactUsWrapperForm textarea , .contactUsWrapperForm textarea:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        color: white;
+        border-color: white;
+    }
+
+
+
+
+    .contactUsWrapperButton {
+        border-radius: 2px;
+        padding:8px 20px ;
+        margin-right: -10px;
+        background: #3B494A;
+        color: white;
+
+
+    }
+    .contactUsWrapperButton:hover {
+
+        background: black;
+        color: white;
+        border-color: black;
+
+
+    }
+
+
+    .contactUsWrapperFormH3{
+        margin-bottom: 30px;
+    }
+
+
+
+    /*place holder color change starts*/
+    ::-webkit-input-placeholder { /* Chrome */
+        color: white !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white !important;
+        opacity: 1;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+        color: white !important;
+        opacity: 1;
+    }
+
+
+    input:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    input:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    input:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    input:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+
+
+    textarea:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    textarea:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    textarea:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+    /*place holder color change starts*/
+
+
+
+
+
+    /*contactUs page part ends*/
+
+
+
+
+
+
+    /*workWrapper page part starts*/
+    .workWrapper {
+        background: #3B494A;
+        color: white;
+
+
+    }
+
+
+    .workWrapperRow2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    /*workWrapper page part ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*media query for md ends*/
+
+
+
+
+/*media query for lg starts*/
+
+
+
+
+@media (min-width: 1200px) and (max-width: 1670px) {
+
+
+
+
+
+
+
+
+
+    .scrollToTop {
+        background: #6C777B;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+
+
+    .scrollToTop:hover {
+        background: #E8E8E8;
+        color:black;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+    .scrollToTop:hover .iconn{
+        color:black;
+    }
+
+
+
+    .iconn {
+        color:#FFFFFF;
+        font-size: 20px;
+    }
+    .iconn:hover  {
+        color:black;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapper {
+        height: 100vh;
+        background:transparent;
+        /*    background:#191D20;*/
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar part ends>*/
+
+
+
+    /*<!--carousel and headerWrapper Part starts-->*/
+
+    .carousel-control 
+    {
+
+
+
+
+
+        height: 25px;
+        width: 25px;
+
+
+
+
+    }
+
+
+
+    .carousel-control.left, .carousel-control.right {
+        background-image: none
+    }
+
+    .carousel-control:hover{
+
+
+    }
+
+    .carousel-control.left {
+        position:absolute;
+        top:88%;
+        left: 85%;
+
+
+    }
+
+    .carousel-control.right{
+        position:absolute;
+        top:88%;
+        right:10%;
+
+    }
+
+    .headAbsoute {
+        position: fixed;
+        top: 150px;
+        left:20px;
+        z-index: 10;
+
+    }
+
+    #carouselImage1 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #carouselImage2 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    
+    
+/*Animation fideUp part starts here*/
+
+
+@keyframes example {
+    0%   { height:50% ; opacity:.2;}
+    25%  { height:75%; opacity:.5;}
+    50%  { height:75%; opacity:.7;}
+    75%  { height:75%; opacity:.9;}
+    100% { height:75%; opacity:.1;}
+}
+
+.animationPrac {
+    
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 3; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    
+}  
+/*Animation fideUp part ends here*/
+    
+    
+    
+    
+    
+    
+    
+    
+    .carousel-caption {
+        height: 75%;
+        text-align: left;
+        width: 50%;
+        margin-left:100px;
+    }
+
+    .carousel-caption> h6 {
+        font-size: 20px;
+    }
+
+    #carouselCaption1 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+    #carouselCaption2 {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-control {
+        transition: visibility ,  opacity 1s ease-in-out;    
+    }
+
+    .carousel-caption> h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-caption> p {
+        font-size: 19px;
+    }
+
+    .sideBarHr2 {
+        width: 50px;
+        margin-bottom: 30px;
+        color: white;
+        height: 1.5px;
+        border: none;
+        background-color: white;
+
+
+    }
+
+    .btn-active {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 20px;
+        margin: 20px 0 0 0 ;
+    }
+
+    .btn-active:hover {
+        color: white;
+        background: black;
+    }
+
+
+    /*<!--carousel and headerWrapper Part ends>*/
+
+
+
+
+
+    /*second Wrapper part starts*/
+
+    .secondWrapper {
+        background: #3B434A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .secondWrapperRow2{
+        margin: 100px 0;
+
+    }
+
+    /*second Wrapper part ends*/
+
+
+    /*<!--third wrapper part starts-->*/
+
+    .thirdWrapper {
+        background: #3B494A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .thirdWrapperRow2{
+        margin: 100px 0;
+
+    }
+
+    .glyphiconArrowRight
+    {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    /*<!--third wrapper part ends>*/
+
+
+
+
+    /*a tag starts*/
+    a{
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    /*a tag ends*/
+
+
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+    .containerOverlay {
+        position: relative;
+        width: 25%;
+        max-width: 25%;
+        float: left;
+        overflow: hidden;
+        color: white;
+
+    }
+
+
+    .containerOverlay:hover {
+        background: #191D20;
+
+
+    }
+
+
+    .imageOverlay2 {
+        opacity: 1;
+
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .imageOverlay2:hover {
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .containerOverlay:hover .imageOverlay2 {
+        opacity: 0.3;
+        transform: scale(1.1);
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .containerOverlay:hover .middle {
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+
+
+
+    .text {
+
+        color: white;
+        font-size: 16px;
+
+    }
+
+
+    .btn-active3 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 22px;
+        margin-top:15px;
+
+    }
+
+    .btn-active3:hover {
+        color: white;
+        background: black;
+    }
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+
+
+
+    /*threePicWrapper part starts*/
+
+    .threePicWrapper{
+        background: #3B494A;
+        color: white;
+    }
+
+
+    .threePicWrapperRow2 {
+        margin: 150px 0;
+    }
+
+
+
+    .threePicWrapperH1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    
+    .img1 , .img2 , .img3  {
+        transition:  all 1s ease;
+        position: relative;
+        
+    }
+    
+    
+    
+    .threePicWrapperDivZoom1:hover .img1 , .threePicWrapperDivZoom2:hover .img2  , .threePicWrapperDivZoom3:hover .img3  {
+       
+        
+        transform: scale(1, 1.1 ) ; 
+        margin-top:-30px;
+        border-bottom: 8px solid black;
+        
+       
+        
+        
+        
+    }
+    .threePicWrapperDivZoom1 , .threePicWrapperDivZoom1 , threePicWrapperDivZoom3{
+        position: relative;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    /*threePicWrapper part ends*/
+
+
+    /*lastWrapper part starts*/
+    .lastWrapper{
+        background: #191D20;
+    }
+    /*lastWrapper part ends*/
+
+
+
+    .btn-active2{
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        letter-spacing: .2em;
+        margin: 100px auto;
+    }
+
+
+
+    .btn-active2:hover{
+        color: white;
+        border: 1px solid #191D20;
+
+    }
+
+
+
+
+    /*ourTeam wrapper part starts*/
+    .ourTeamWrapper
+    {
+        background:#3B494A;
+
+
+    }
+
+
+    .ourTeamWrapperRow2{
+        margin: 100px 0px;
+    }
+
+    .ourTeamWrapperRow3{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .ourTeamWrapperImageRow1{
+        margin: 30px 0px;
+    }
+
+    .ourTeamWrapperH1 {
+        color: white;
+    }
+
+
+    .ourTeamImageH1 , .ourTeamImage1P {
+        color: white;
+
+    }
+
+
+    /*ourTeam wrapper part ends*/
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar for our team page part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapperOurTeamPage {
+        height: 100vh;
+        /*    background:transparent;*/
+        background:#191D20;
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar for our team page part ends>*/
+
+
+
+
+
+    /*workInProgressWrapper page part starts*/
+    .workInProgressWrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgressWrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    /*workInProgressWrapper page part ends*/
+
+
+
+    /*workInProgress2Wrapper page part starts*/
+    .workInProgress2Wrapper{
+
+        background: #3B434A;
+    }
+
+
+    .workInProgress2WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress2Wrapper page part ends*/
+
+
+
+    /*workInProgress3Wrapper page part starts*/
+    .workInProgress3Wrapper{
+
+        background: #3B494A;
+    }
+
+    .workInProgress3WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress3Wrapper page part ends*/
+
+
+
+    /*workInProgress4Wrapper page part starts*/
+    .workInProgress4Wrapper{
+
+        background: #3B434A;
+    }
+
+    .workInProgress4WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress4Wrapper page part ends*/
+
+
+
+    /*workInProgress5Wrapper page part starts*/
+    .workInProgress5Wrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgress5WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress5Wrapper page part ends*/
+
+
+
+
+
+
+    /*google map part starts*/
+
+    .map {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+
+    /*google map part ends*/
+
+
+
+    /*contactUs page part starts*/
+    .contactUsWrapper{
+        background: #3B494A;
+    }
+
+    .contactUsWrapperRow21 {
+        margin-top:100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .contactUsWrapperRow23 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+    .contactUsWrapperRow21P{
+        white-space: pre-line;
+        line-height: 2em;
+    }
+
+    .contactUsWrapperRow21H3{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .contactUsWrapperForm input , .contactUsWrapperForm input:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        border-color: white;
+
+    }
+
+
+    .contactUsWrapperForm textarea , .contactUsWrapperForm textarea:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        color: white;
+        border-color: white;
+    }
+
+
+
+
+    .contactUsWrapperButton {
+        border-radius: 2px;
+        padding:8px 20px ;
+        margin-right: -10px;
+        background: #3B494A;
+        color: white;
+
+
+    }
+    .contactUsWrapperButton:hover {
+
+        background: black;
+        color: white;
+        border-color: black;
+
+
+    }
+
+
+    .contactUsWrapperFormH3{
+        margin-bottom: 30px;
+    }
+
+
+
+    /*place holder color change starts*/
+    ::-webkit-input-placeholder { /* Chrome */
+        color: white !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white !important;
+        opacity: 1;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+        color: white !important;
+        opacity: 1;
+    }
+
+
+    input:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    input:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    input:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    input:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+
+
+    textarea:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    textarea:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    textarea:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+    /*place holder color change starts*/
+
+
+
+
+
+    /*contactUs page part ends*/
+
+
+
+
+
+
+    /*workWrapper page part starts*/
+    .workWrapper {
+        background: #3B494A;
+        color: white;
+
+
+    }
+
+
+    .workWrapperRow2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    /*workWrapper page part ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*media query for lg ends*/
+
+
+
+/*media query for xl starts*/
+
+
+
+
+@media (min-width: 1671px) {
+
+
+
+
+
+
+
+
+
+    .scrollToTop {
+        background: #6C777B;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+
+
+    .scrollToTop:hover {
+        background: #E8E8E8;
+        color:black;
+        padding: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-decoration: none;
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+        display: none;
+        z-index: 80;
+    }
+
+    .scrollToTop:hover .iconn{
+        color:black;
+    }
+
+
+
+    .iconn {
+        color:#FFFFFF;
+        font-size: 20px;
+    }
+    .iconn:hover  {
+        color:black;
+        font-size: 20px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapper {
+        height: 100vh;
+        background:transparent;
+        /*    background:#191D20;*/
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar part ends>*/
+
+
+
+    /*<!--carousel and headerWrapper Part starts-->*/
+
+    .carousel-control 
+    {
+
+
+
+
+
+        height: 25px;
+        width: 25px;
+
+
+
+
+    }
+
+
+
+    .carousel-control.left, .carousel-control.right {
+        background-image: none
+    }
+
+    .carousel-control:hover{
+
+
+    }
+
+    .carousel-control.left {
+        position:absolute;
+        top:88%;
+        left: 85%;
+
+
+    }
+
+    .carousel-control.right{
+        position:absolute;
+        top:88%;
+        right:10%;
+
+    }
+
+    .headAbsoute {
+        position: fixed;
+        top: 150px;
+        left:20px;
+        z-index: 10;
+
+    }
+
+    #carouselImage1 {
+        height: 100vh;
+        width: 100vw;
+    }
+
+    #carouselImage2 {
+        height: 100vh;
+        width: 100vw;
+    }
+    
+    
+    
+    
+/*Animation fideUp part starts here*/
+
+
+@keyframes example {
+    0%   { height:45% ; opacity:.2;}
+    25%  { height:70%; opacity:.5;}
+    50%  { height:70%; opacity:.7;}
+    75%  { height:70%; opacity:.9;}
+    100% { height:70%; opacity:.1;}
+}
+
+.animationPrac {
+    
+    -webkit-animation-name: example; 
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: 3; 
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; 
+    
+}  
+/*Animation fideUp part ends here*/
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    .carousel-caption {
+        height: 70% !important;
+        text-align: left;
+        width: 50%;
+        margin-left:100px;
+
+
+    }
+
+    .carousel-caption> h6 {
+        font-size: 20px;
+    }
+
+    #carouselCaption1 {
+        /*        position: relative;*/
+
+
+
+    }
+    #carouselCaption2 {
+        /*        position: relative;*/
+
+
+    }
+
+    /*    .carousel-control {
+            transition: visibility ,  opacity 1s ease-in-out;    
+        }*/
+
+    .carousel-caption> h1 {
+        font-size: 35px;
+        margin-bottom: 30px;
+    }
+
+    .carousel-caption> p {
+        font-size: 19px;
+    }
+
+    .sideBarHr2 {
+        width: 50px;
+        margin-bottom: 30px;
+        color: white;
+        height: 1.5px;
+        border: none;
+        background-color: white;
+
+
+    }
+
+    .btn-active {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 20px;
+        margin: 20px 0 0 0 ;
+    }
+
+    .btn-active:hover {
+        color: white;
+        background: black;
+    }
+
+
+    /*<!--carousel and headerWrapper Part ends>*/
+
+
+
+
+
+    /*second Wrapper part starts*/
+
+    .secondWrapper {
+        background: #3B434A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .secondWrapperRow2{
+        margin: 100px 0;
+
+    }
+
+    /*second Wrapper part ends*/
+
+
+    /*<!--third wrapper part starts-->*/
+
+    .thirdWrapper {
+        background: #3B494A;
+        color: white;
+        position: relative;
+        z-index: 14;
+        line-height: 1.5em;
+
+    }
+
+    .thirdWrapperRow2{
+        margin: 100px 0;
+
+    }
+
+    .glyphiconArrowRight
+    {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    /*<!--third wrapper part ends>*/
+
+
+
+
+    /*a tag starts*/
+    a{
+        color: white;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
+    }
+    /*a tag ends*/
+
+
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+    .containerOverlay {
+        position: relative;
+        width: 25%;
+        max-width: 25%;
+        float: left;
+        overflow: hidden;
+        color: white;
+
+    }
+
+
+    .containerOverlay:hover {
+        background: #191D20;
+
+
+    }
+
+
+    .imageOverlay2 {
+        opacity: 1;
+
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+    }
+
+    .imageOverlay2:hover {
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+
+
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+    .containerOverlay:hover .imageOverlay2 {
+        opacity: 0.3;
+        transform: scale(1.1);
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+    }
+
+    .containerOverlay:hover .middle {
+        opacity: 1;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+
+
+
+    .text {
+
+        color: white;
+        font-size: 16px;
+
+    }
+
+
+    .btn-active3 {
+        background-color: transparent;
+        color: white;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding: 7px 22px;
+        margin-top:15px;
+
+    }
+
+    .btn-active3:hover {
+        color: white;
+        background: black;
+    }
+
+    /*imageWrapper and Overlay on image hover part starts*/
+
+
+
+
+
+
+
+    /*threePicWrapper part starts*/
+
+    .threePicWrapper{
+        background: #3B494A;
+        color: white;
+    }
+
+
+    .threePicWrapperRow2 {
+        margin: 150px 0;
+    }
+
+
+
+    .threePicWrapperH1{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+
+    .img1 , .img2 , .img3  {
+        transition:  all 1s ease;
+        position: relative;
+        
+    }
+    
+    
+    
+    .threePicWrapperDivZoom1:hover .img1 , .threePicWrapperDivZoom2:hover .img2  , .threePicWrapperDivZoom3:hover .img3  {
+       
+        
+        transform: scale(1, 1.1 ) ; 
+        margin-top:-30px;
+        border-bottom: 8px solid black;
+        
+       
+        
+        
+        
+    }
+    .threePicWrapperDivZoom1 , .threePicWrapperDivZoom1 , threePicWrapperDivZoom3{
+        position: relative;
+    }
+    
+    
+    
+    
+    
+    
+    
+    /*threePicWrapper part ends*/
+
+
+    /*lastWrapper part starts*/
+    .lastWrapper{
+        background: #191D20;
+    }
+    /*lastWrapper part ends*/
+
+
+
+    .btn-active2{
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        letter-spacing: .2em;
+        margin: 100px auto;
+    }
+
+
+
+    .btn-active2:hover{
+        color: white;
+        border: 1px solid #191D20;
+
+    }
+
+
+
+
+    /*ourTeam wrapper part starts*/
+    .ourTeamWrapper
+    {
+        background:#3B494A;
+
+
+    }
+
+
+    .ourTeamWrapperRow2{
+        margin: 100px 0px;
+    }
+
+    .ourTeamWrapperRow3{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .ourTeamWrapperImageRow1{
+        margin: 30px 0px;
+    }
+
+    .ourTeamWrapperH1 {
+        color: white;
+    }
+
+
+    .ourTeamImageH1 , .ourTeamImage1P {
+        color: white;
+
+    }
+
+
+    /*ourTeam wrapper part ends*/
+
+
+
+
+
+
+
+
+
+
+    /*<!--side Navbar for our team page part starts-->*/
+
+    .sideBar {
+        color: white;
+
+    }
+
+    .fixedWrapperOurTeamPage {
+        height: 100vh;
+        /*    background:transparent;*/
+        background:#191D20;
+        z-index: 30;
+        position: fixed;
+        transition: all 1s;
+
+    }
+
+    .headerWrapperHead {
+
+    }
+
+
+    .sideBar li {
+        margin-bottom:12px;
+        margin-left: 25px;
+    }
+
+    .sideBarLi1 {
+        font-weight: bold;
+
+        font-size: 25px;
+    }
+
+    .sideBarHr {
+        width: 35px;
+        margin-bottom: 35px;
+    }
+    /*<!--side Navbar for our team page part ends>*/
+
+
+
+
+
+    /*workInProgressWrapper page part starts*/
+    .workInProgressWrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgressWrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+
+    /*workInProgressWrapper page part ends*/
+
+
+
+    /*workInProgress2Wrapper page part starts*/
+    .workInProgress2Wrapper{
+
+        background: #3B434A;
+    }
+
+
+    .workInProgress2WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress2Wrapper page part ends*/
+
+
+
+    /*workInProgress3Wrapper page part starts*/
+    .workInProgress3Wrapper{
+
+        background: #3B494A;
+    }
+
+    .workInProgress3WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress3Wrapper page part ends*/
+
+
+
+    /*workInProgress4Wrapper page part starts*/
+    .workInProgress4Wrapper{
+
+        background: #3B434A;
+    }
+
+    .workInProgress4WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+
+    /*workInProgress4Wrapper page part ends*/
+
+
+
+    /*workInProgress5Wrapper page part starts*/
+    .workInProgress5Wrapper{
+
+        background: #3B494A;
+    }
+
+
+    .workInProgress5WrapperRow2{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+
+
+
+
+    /*workInProgress5Wrapper page part ends*/
+
+
+
+
+
+
+    /*google map part starts*/
+
+    .map {
+        -webkit-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -o-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+
+    /*google map part ends*/
+
+
+
+    /*contactUs page part starts*/
+    .contactUsWrapper{
+        background: #3B494A;
+    }
+
+    .contactUsWrapperRow21 {
+        margin-top:100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+    .contactUsWrapperRow23 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        color: white;
+    }
+
+
+    .contactUsWrapperRow21P{
+        white-space: pre-line;
+        line-height: 2em;
+    }
+
+    .contactUsWrapperRow21H3{
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+
+
+    .contactUsWrapperForm input , .contactUsWrapperForm input:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        border-color: white;
+
+    }
+
+
+    .contactUsWrapperForm textarea , .contactUsWrapperForm textarea:focus {
+        border-radius: 0px;
+        background: #3B494A;
+        color: white;
+        border-color: white;
+    }
+
+
+
+
+    .contactUsWrapperButton {
+        border-radius: 2px;
+        padding:8px 20px ;
+        margin-right: -10px;
+        background: #3B494A;
+        color: white;
+
+
+    }
+    .contactUsWrapperButton:hover {
+
+        background: black;
+        color: white;
+        border-color: black;
+
+
+    }
+
+
+    .contactUsWrapperFormH3{
+        margin-bottom: 30px;
+    }
+
+
+
+    /*place holder color change starts*/
+    ::-webkit-input-placeholder { /* Chrome */
+        color: white !important;
+    }
+    :-ms-input-placeholder { /* IE 10+ */
+        color: white !important;
+    }
+    ::-moz-placeholder { /* Firefox 19+ */
+        color: white !important;
+        opacity: 1;
+    }
+    :-moz-placeholder { /* Firefox 4 - 18 */
+        color: white !important;
+        opacity: 1;
+    }
+
+
+    input:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    input:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    input:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    input:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+
+
+    textarea:focus::-webkit-input-placeholder { /* Chrome */
+        color: grey !important;
+    }
+    textarea:focus:-ms-input-placeholder { /* IE 10+ */
+        color: grey !important;
+    }
+    textarea:focus::-moz-placeholder { /* Firefox 19+ */
+        color: grey !important;
+        opacity: 1;
+    }
+    textarea:focus:-moz-placeholder { /* Firefox 4 - 18 */
+        color: grey !important;
+        opacity: 1;
+    }
+    /*place holder color change starts*/
+
+
+
+
+
+    /*contactUs page part ends*/
+
+
+
+
+
+
+    /*workWrapper page part starts*/
+    .workWrapper {
+        background: #3B494A;
+        color: white;
+
+
+    }
+
+
+    .workWrapperRow2 {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    /*workWrapper page part ends*/
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/*media query for xl ends*/
+
+
+
+
+
+
+
